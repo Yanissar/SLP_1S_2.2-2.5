@@ -1,4 +1,9 @@
-def check_for_positive_integer(number):
+def check_for_positive_integer(number: str) -> bool:
+    """
+    Function to check if user input is actually a number and it is positive.
+    :param number: User input from get_user_input()
+    :return: Boolean flag for conditional operator in get_user_input()
+    """
     checking_mode = True
     if len(number) == 0:
         checking_mode = False
